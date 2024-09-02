@@ -66,6 +66,6 @@ Este proyecto está bajo la licencia MIT. Para más detalles, revisa el archivo 
 
 ## Contacto
 
-Para más información o preguntas sobre el curso, no dudes en contactar a **[tu-nombre](mailto:tu-email@ejemplo.com)**.
+Para más información o preguntas sobre el curso, no dudes en contactar a **[Alex Rodriguez](mailto:karodriguezt27@gmail.com)**.
 
 ¡Esperamos que disfrutes el curso y aprendas mucho sobre programación en C++!
