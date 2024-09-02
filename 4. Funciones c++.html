@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Funciones en C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Funciones en C++</h1>
+    </header>
+    <main>
+        <section id="documentacion">
+            <h2>Documentación sobre Funciones en C++</h2>
+            <h3>¿Qué es una función?</h3>
+            <p>Una función es un bloque de código que realiza una tarea específica. Las funciones permiten dividir un programa en partes más pequeñas y manejables. En C++, las funciones se definen usando la siguiente sintaxis básica:</p>
+            <pre>
+tipo_de_retorno nombre_funcion(parámetros) {
+    // Código de la función
+    return valor; // si se requiere un valor de retorno
+}
+            </pre>
+            <h3>Tipos de Funciones</h3>
+            <p>En C++, hay varios tipos de funciones:</p>
+            <ul>
+                <li><strong>Funciones sin valor de retorno (<code>void</code>):</strong> No devuelven ningún valor. Se utilizan para realizar acciones específicas.</li>
+                <li><strong>Funciones con valor de retorno:</strong> Devuelven un valor al final de su ejecución. El tipo de valor devuelto debe coincidir con el tipo de retorno especificado al definir la función.</li>
+                <li><strong>Funciones con parámetros:</strong> Reciben datos de entrada, los procesan y pueden devolver un resultado.</li>
+                <li><strong>Funciones con parámetros por referencia:</strong> Permiten modificar los valores de las variables pasadas como argumentos.</li>
+                <li><strong>Funciones recursivas:</strong> Se llaman a sí mismas dentro de su propio cuerpo, lo cual es útil para problemas que se pueden dividir en subproblemas similares.</li>
+            </ul>
+            <h3>Ejemplo de una Función con Retorno</h3>
+            <p>Este ejemplo muestra una función que suma dos números y devuelve el resultado:</p>
+            <pre>
+int suma(int a, int b) {
+    return a + b;
+}
+            </pre>
+        </section>
+
+        <!-- Ejercicios para las Funciones -->
+        <section id="ejercicios-funciones">
+            <h2>Ejercicios con Funciones en C++</h2>
+            <ol>
+                <li><strong>Ejercicio 1:</strong> Escribe una función que tome dos números enteros y devuelva su suma.</li>
+                <textarea id="func1" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 2:</strong> Crea una función que determine si un número es par o impar. La función debe devolver un valor booleano.</li>
+                <textarea id="func2" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 3:</strong> Escribe una función que calcule el factorial de un número entero dado.</li>
+                <textarea id="func3" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 4:</strong> Crea una función que reciba un número entero y devuelva el número al cuadrado.</li>
+                <textarea id="func4" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 5:</strong> Escribe una función que determine si un número es primo.</li>
+                <textarea id="func5" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 6:</strong> Crea una función que reciba dos números y devuelva el mayor de ellos.</li>
+                <textarea id="func6" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 7:</strong> Escribe una función recursiva que calcule el <em>n</em>-ésimo término de la secuencia de Fibonacci.</li>
+                <textarea id="func7" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 8:</strong> Crea una función que convierta grados Celsius a Fahrenheit.</li>
+                <textarea id="func8" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 9:</strong> Escribe una función que reciba un array de enteros y su tamaño, y calcule la media de sus elementos.</li>
+                <textarea id="func9" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 10:</strong> Escribe una función que reciba una cadena de caracteres y devuelva la cadena invertida.</li>
+                <textarea id="func10" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+            </ol>
+        </section>
+        <!-- Botón único para guardar todos los archivos -->
+        <button onclick="guardarTodosLosArchivos()">Guardar Todos</button>
+        <section id="volver-al-indice">
+            <a href="index.html">Volver al Índice del Curso</a>
+        </section>
+    </main>
+    <script>
+        function guardarTodosLosArchivos() {
+            // Obtener todos los elementos textarea
+            const textareas = document.querySelectorAll('textarea');
+            const fecha = new Date().toISOString().slice(0, 10); // Formato YYYY-MM-DD
+
+            textareas.forEach((textarea, index) => {
+                const contenido = textarea.value;
+                if (contenido.trim() !== '') { // Solo guardar si hay contenido
+                    const numEjercicio = index + 1; // Numero del ejercicio
+                    const nombreArchivo = `${fecha}-funcion-ejercicio-${numEjercicio}.cpp`;
+
+                    const blob = new Blob([contenido], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+
+                    const enlace = document.createElement('a');
+                    enlace.href = url;
+                    enlace.download = nombreArchivo;
+
+                    document.body.appendChild(enlace);
+                    enlace.click();
+                    document.body.removeChild(enlace);
+                    URL.revokeObjectURL(url);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

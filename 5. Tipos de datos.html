@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Tipos de Datos en C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Tipos de Datos en C++</h1>
+    </header>
+    <main>
+        <section id="documentacion">
+            <h2>Documentación sobre Tipos de Datos en C++</h2>
+            <h3>Tipos de Datos Básicos</h3>
+            <p>En C++, los tipos de datos básicos incluyen:</p>
+            <ul>
+                <li><strong><code>int</code>:</strong> Enteros. Se utilizan para almacenar números enteros, ya sean positivos o negativos, sin decimales. Ejemplo: <code>int edad = 25;</code></li>
+                <li><strong><code>float</code>:</strong> Números de punto flotante de precisión simple. Se utilizan para almacenar números con decimales. Ejemplo: <code>float precio = 19.99;</code></li>
+                <li><strong><code>double</code>:</strong> Similar a <code>float</code> pero con el doble de precisión. Ejemplo: <code>double distancia = 123.456;</code></li>
+                <li><strong><code>char</code>:</strong> Caracteres. Se utilizan para almacenar un solo carácter. Ejemplo: <code>char letra = 'A';</code></li>
+                <li><strong><code>bool</code>:</strong> Valores booleanos. Se utilizan para almacenar <code>true</code> o <code>false</code>. Ejemplo: <code>bool esMayor = true;</code></li>
+                <li><strong><code>string</code>:</strong> Cadenas de caracteres. En C++, las cadenas de caracteres se manejan con la clase <code>string</code> de la biblioteca estándar. Ejemplo: <code>std::string nombre = "Juan";</code></li>
+            </ul>
+
+            <h3>Tipos de Datos Compuestos</h3>
+            <p>Además de los tipos de datos básicos, C++ también ofrece tipos compuestos como:</p>
+            <ul>
+                <li><strong><code>array</code>:</strong> Conjunto de elementos del mismo tipo. Los arrays en C++ tienen un tamaño fijo definido en el momento de su declaración. Ejemplo: <code>int numeros[5] = {1, 2, 3, 4, 5};</code></li>
+                <li><strong><code>ArrayList</code>:</strong> En C++, no existe un tipo <code>ArrayList</code> directamente. Sin embargo, la biblioteca estándar proporciona <code>std::vector</code>, que es un contenedor que puede cambiar de tamaño dinámicamente y es más similar a un ArrayList de otros lenguajes como Java. Ejemplo: <code>std::vector&lt;int&gt; listaNumeros = {1, 2, 3, 4, 5};</code></li>
+            </ul>
+        </section>
+
+        <!-- Ejercicios para los Tipos de Datos -->
+        <section id="ejercicios-tipos-datos">
+            <h2>Ejercicios con Tipos de Datos en C++</h2>
+            <ol>
+                <li><strong>Ejercicio 1:</strong> Declara una variable <code>int</code> para almacenar la edad de una persona y muestra su valor.</li>
+                <textarea id="tipo1" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 2:</strong> Declara una variable <code>float</code> para almacenar el precio de un artículo y muestra su valor.</li>
+                <textarea id="tipo2" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 3:</strong> Escribe un programa que tome un número <code>int</code> del usuario y determine si es par o impar.</li>
+                <textarea id="tipo3" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 4:</strong> Declara un <code>string</code> para almacenar el nombre de una persona y muestra su valor.</li>
+                <textarea id="tipo4" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 5:</strong> Escribe un programa que almacene 5 números en un array y calcule su suma.</li>
+                <textarea id="tipo5" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 6:</strong> Declara un array de caracteres (<code>char</code>) para almacenar una palabra y muestra cada letra en una nueva línea.</li>
+                <textarea id="tipo6" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 7:</strong> Crea un <code>std::vector</code> de enteros, añade algunos elementos y muestra el tamaño del vector.</li>
+                <textarea id="tipo7" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 8:</strong> Escribe un programa que tome un array de enteros y devuelva el número máximo.</li>
+                <textarea id="tipo8" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 9:</strong> Usa un <code>std::vector</code> para almacenar 5 números y calcula su media.</li>
+                <textarea id="tipo9" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+
+                <li><strong>Ejercicio 10:</strong> Escribe un programa que invierta los elementos de un array de caracteres y muestre la cadena resultante.</li>
+                <textarea id="tipo10" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+            </ol>
+        </section>
+        <!-- Botón único para guardar todos los archivos -->
+        <button onclick="guardarTodosLosArchivos()">Guardar Todos</button>
+        <section id="volver-al-indice">
+            <a href="index.html">Volver al Índice del Curso</a>
+        </section>
+    </main>
+    <script>
+        function guardarTodosLosArchivos() {
+            // Obtener todos los elementos textarea
+            const textareas = document.querySelectorAll('textarea');
+            const fecha = new Date().toISOString().slice(0, 10); // Formato YYYY-MM-DD
+
+            textareas.forEach((textarea, index) => {
+                const contenido = textarea.value;
+                if (contenido.trim() !== '') { // Solo guardar si hay contenido
+                    const numEjercicio = index + 1; // Numero del ejercicio
+                    const nombreArchivo = `${fecha}-tipo-datos-ejercicio-${numEjercicio}.cpp`;
+
+                    const blob = new Blob([contenido], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+
+                    const enlace = document.createElement('a');
+                    enlace.href = url;
+                    enlace.download = nombreArchivo;
+
+                    document.body.appendChild(enlace);
+                    enlace.click();
+                    document.body.removeChild(enlace);
+                    URL.revokeObjectURL(url);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

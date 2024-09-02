@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a C++</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #resultado-sintaxis,
+        #resultado-entradas-salidas,
+        #resultado-operadores,
+        #resultado-condicionales,
+        #resultado-bucles {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Introducción a C++</h1>
+    </header>
+    <main>
+        <section id="sintaxis-basica">
+            <h2>Sintaxis Básica</h2>
+            <p>En C++, un programa típico se organiza en funciones, siendo la función <code>main()</code> el punto de entrada. Aquí te explicamos cómo se estructura un programa básico:</p>
+            <pre><code>#include &lt;iostream&gt;
+
+// La función principal del programa
+int main() {
+    // Imprime un mensaje en la consola
+    std::cout &lt;&lt; "Hola, mundo!" &lt;&lt; std::endl;
+    return 0; // Fin del programa
+}</code></pre>
+            <p><strong>Explicación:</strong></p>
+            <ul>
+                <li><code>#include &lt;iostream&gt;</code>: Incluye la biblioteca estándar de entrada y salida.</li>
+                <li><code>int main()</code>: La función principal que se ejecuta al iniciar el programa.</li>
+                <li><code>std::cout</code>: Utilizado para imprimir mensajes en la consola.</li>
+                <li><code>std::endl</code>: Agrega una nueva línea al final del mensaje.</li>
+                <li><code>return 0;</code>: Indica que el programa terminó correctamente.</li>
+            </ul>
+            <h3>Reto</h3>
+            <p>Escribe un programa que imprima tu nombre en la consola.</p>
+            <textarea id="reto-sintaxis" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="entradas-salidas">
+            <h2>Entradas y Salidas</h2>
+            <p>C++ utiliza <code>std::cin</code> para leer entradas del usuario y <code>std::cout</code> para mostrar resultados.</p>
+            <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+    std::cout &lt;&lt; "Introduce un número: ";
+    std::cin &gt;&gt; numero; // Lee un número del usuario
+    std::cout &lt;&lt; "El número introducido es: " &lt;&lt; numero &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            <p><strong>Explicación:</strong></p>
+            <ul>
+                <li><code>std::cin</code>: Se utiliza para leer datos de entrada desde la consola.</li>
+                <li><code>&gt;&gt;</code>: Operador de extracción que extrae datos del flujo de entrada (console).</li>
+                <li><code>std::cout &lt;&lt; "Introduce un número: "</code>: Imprime un mensaje solicitando al usuario que introduzca un número.</li>
+            </ul>
+            <h3>Reto</h3>
+            <p>Escribe un programa que pida al usuario su edad y luego imprima un mensaje con la edad introducida.</p>
+            <textarea id="reto-entradas-salidas" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="operadores">
+            <h2>Operadores</h2>
+            <p>C++ soporta varios tipos de operadores para realizar operaciones aritméticas, comparaciones y más.</p>
+            <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    int a = 5;
+    int b = 10;
+    std::cout &lt;&lt; "Suma: " &lt;&lt; (a + b) &lt;&lt; std::endl;
+    std::cout &lt;&lt; "Multiplicación: " &lt;&lt; (a * b) &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            <p><strong>Explicación:</strong></p>
+            <ul>
+                <li><code>a + b</code>: Operador de suma que suma dos números.</li>
+                <li><code>a * b</code>: Operador de multiplicación que multiplica dos números.</li>
+                <li><code>std::cout &lt;&lt; "Suma: " &lt;&lt; (a + b)</code>: Imprime el resultado de la suma.</li>
+            </ul>
+            <h3>Reto</h3>
+            <p>Escribe un programa que calcule la suma y el producto de dos números introducidos por el usuario.</p>
+            <textarea id="reto-operadores" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="condicionales">
+            <h2>Condicionales</h2>
+            <p>Las estructuras condicionales permiten ejecutar diferentes bloques de código según ciertas condiciones.</p>
+            <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    int numero;
+    std::cout &lt;&lt; "Introduce un número: ";
+    std::cin &gt;&gt; numero;
+
+    if (numero % 2 == 0) {
+        std::cout &lt;&lt; "El número es par." &lt;&lt; std::endl;
+    } else {
+        std::cout &lt;&lt; "El número es impar." &lt;&lt; std::endl;
+    }
+    return 0;
+}</code></pre>
+            <p><strong>Explicación:</strong></p>
+            <ul>
+                <li><code>if (numero % 2 == 0)</code>: Comprueba si el número es divisible por 2 (es decir, si es par).</li>
+                <li><code>else</code>: Ejecuta el bloque de código si la condición <code>if</code> no se cumple.</li>
+                <li><code>std::cout &lt;&lt; "El número es par."</code>: Imprime un mensaje si la condición es verdadera.</li>
+            </ul>
+            <h3>Reto</h3>
+            <p>Escribe un programa que pida al usuario un número y determine si es mayor o menor que 10.</p>
+            <textarea id="reto-condicionales" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="bucles">
+            <h2>Bucles</h2>
+            <p>Los bucles permiten ejecutar un bloque de código varias veces. C++ ofrece varios tipos de bucles.</p>
+            <pre><code>#include &lt;iostream&gt;
+
+int main() {
+    for (int i = 1; i &lt;= 5; ++i) {
+        std::cout &lt;&lt; "Número: " &lt;&lt; i &lt;&lt; std::endl;
+    }
+    return 0;
+}</code></pre>
+            <p><strong>Explicación:</strong></p>
+            <ul>
+                <li><code>for (int i = 1; i &lt;= 5; ++i)</code>: Un bucle <code>for</code> que inicia con <code>i = 1</code> y se ejecuta mientras <code>i</code> sea menor o igual a 5.</li>
+                <li><code>++i</code>: Incrementa el valor de <code>i</code> en cada iteración del bucle.</li>
+                <li><code>std::cout &lt;&lt; "Número: " &lt;&lt; i</code>: Imprime el valor de <code>i</code> en cada iteración.</li>
+            </ul>
+            <h3>Reto</h3>
+            <p>Escribe un programa que utilice un bucle para imprimir los números del 1 al 10.</p>
+            <textarea id="reto-bucles" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+    </section>
+    <!-- Botón único para guardar todos los archivos -->
+    <button onclick="guardarTodosLosArchivos()">Guardar Todos</button>
+
+    <section id="volver-al-indice">
+        <a href="index.html">Volver al Índice del Curso</a>
+    </section>
+    </main>
+    <script>
+        function guardarTodosLosArchivos() {
+            // Obtener todos los elementos textarea
+            const textareas = document.querySelectorAll('textarea');
+            const fecha = new Date().toISOString().slice(0, 10); // Formato YYYY-MM-DD
+
+            textareas.forEach((textarea, index) => {
+                const contenido = textarea.value;
+                if (contenido.trim() !== '') { // Solo guardar si hay contenido
+                    const numEjercicio = index + 1; // Numero del ejercicio
+                    const nombreArchivo = `${fecha}-funcion-ejercicio-${numEjercicio}.cpp`;
+
+                    const blob = new Blob([contenido], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+
+                    const enlace = document.createElement('a');
+                    enlace.href = url;
+                    enlace.download = nombreArchivo;
+
+                    document.body.appendChild(enlace);
+                    enlace.click();
+                    document.body.removeChild(enlace);
+                    URL.revokeObjectURL(url);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Condicionales en C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios de Condicionales en C++</h1>
+    </header>
+    <main>
+        <section id="ejercicio1">
+            <h2>Ejercicio 1: Número Par o Impar</h2>
+            <p>Escribe un programa que pida un número al usuario y determine si es par o impar.</p>
+            <textarea id="reto1" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio2">
+            <h2>Ejercicio 2: Positivo, Negativo o Cero</h2>
+            <p>Escribe un programa que pida un número al usuario y determine si es positivo, negativo o cero.</p>
+            <textarea id="reto2" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio3">
+            <h2>Ejercicio 3: Mayor de Dos Números</h2>
+            <p>Escribe un programa que pida dos números al usuario y determine cuál es mayor.</p>
+            <textarea id="reto3" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio4">
+            <h2>Ejercicio 4: Bisiesto o No</h2>
+            <p>Escribe un programa que determine si un año introducido por el usuario es bisiesto o no.</p>
+            <textarea id="reto4" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio5">
+            <h2>Ejercicio 5: Notas de Examen</h2>
+            <p>Escribe un programa que pida la calificación de un examen y muestre si es "Aprobado" o "Reprobado" (considerando que la nota mínima para aprobar es 60).</p>
+            <textarea id="reto5" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio6">
+            <h2>Ejercicio 6: Multiplicidad de Tres</h2>
+            <p>Escribe un programa que pida un número y determine si es múltiplo de tres.</p>
+            <textarea id="reto6" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio7">
+            <h2>Ejercicio 7: Operación Aritmética</h2>
+            <p>Escribe un programa que pida dos números y un operador (+, -, *, /) y realice la operación correspondiente.</p>
+            <textarea id="reto7" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio8">
+            <h2>Ejercicio 8: Categoría de Edad</h2>
+            <p>Escribe un programa que pida la edad de una persona y determine su categoría: niño (0-12), adolescente (13-17), adulto (18-64), mayor (65+).</p>
+            <textarea id="reto8" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio9">
+            <h2>Ejercicio 9: Ordenar Tres Números</h2>
+            <p>Escribe un programa que pida tres números y los muestre en orden ascendente.</p>
+            <textarea id="reto9" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <section id="ejercicio10">
+            <h2>Ejercicio 10: Validación de Contraseña</h2>
+            <p>Escribe un programa que simule la validación de una contraseña. Si la contraseña introducida es "segura123", muestra "Acceso concedido"; de lo contrario, muestra "Acceso denegado".</p>
+            <textarea id="reto10" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+       <!-- Botón único para guardar todos los archivos -->
+       <button onclick="guardarTodosLosArchivos()">Guardar Todos</button>
+       <section id="volver-al-indice">
+        <a href="index.html">Volver al Índice del Curso</a>
+    </section>
+    </main>
+    <script>
+        function guardarTodosLosArchivos() {
+            // Obtener todos los elementos textarea
+            const textareas = document.querySelectorAll('textarea');
+            const fecha = new Date().toISOString().slice(0, 10); // Formato YYYY-MM-DD
+
+            textareas.forEach((textarea, index) => {
+                const contenido = textarea.value;
+                if (contenido.trim() !== '') { // Solo guardar si hay contenido
+                    const numEjercicio = index + 1; // Numero del ejercicio
+                    const nombreArchivo = `${fecha}-ejercicio-${numEjercicio}.cpp`;
+
+                    const blob = new Blob([contenido], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+
+                    const enlace = document.createElement('a');
+                    enlace.href = url;
+                    enlace.download = nombreArchivo;
+
+                    document.body.appendChild(enlace);
+                    enlace.click();
+                    document.body.removeChild(enlace);
+                    URL.revokeObjectURL(url);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

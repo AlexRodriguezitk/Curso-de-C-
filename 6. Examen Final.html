@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Examen Final</h1>
+    </header>
+    <main>
+        <!-- Ejercicio 1 -->
+        <section id="ejercicio1">
+            <h2>Ejercicio 1: Calculadora de Calificaciones</h2>
+            <p>
+                En este ejercicio, crearás un programa en C++ que calcula la calificación promedio de un estudiante y determina su calificación final basada en un sistema de letras (A, B, C, D, F). 
+                Utilizarás operadores para los cálculos, condicionales para las decisiones, bucles para la entrada de datos, funciones para modular el código y diferentes tipos de datos para manejar la información.
+            </p>
+            <h3>Documentación Paso a Paso:</h3>
+            <ol>
+                <li><strong>Definir las Variables:</strong> Define las variables necesarias, como un array para almacenar las calificaciones y un <code>int</code> para contar la cantidad de calificaciones.</li>
+                <li><strong>Función para Calcular el Promedio:</strong> Crea una función <code>float calcularPromedio(int calificaciones[], int numCalificaciones)</code> que recibe un array de enteros y el número total de calificaciones, y devuelve el promedio como un <code>float</code>.</li>
+                <li><strong>Función para Determinar la Letra de la Calificación:</strong> Crea una función <code>char determinarLetra(float promedio)</code> que recibe el promedio y devuelve la letra de la calificación correspondiente usando condicionales (<code>if</code>-<code>else</code>).</li>
+                <li><strong>Bucle para Entrada de Datos:</strong> Utiliza un bucle <code>for</code> para permitir que el usuario ingrese todas las calificaciones.</li>
+                <li><strong>Llamar a las Funciones:</strong> Llama a las funciones desde <code>main()</code> para calcular el promedio y determinar la letra de la calificación.</li>
+                <li><strong>Mostrar el Resultado:</strong> Muestra el promedio y la calificación final al usuario.</li>
+            </ol>
+            <textarea id="ejercicio1-codigo" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <!-- Ejercicio 2 -->
+        <section id="ejercicio2">
+            <h2>Ejercicio 2: Inventario de Tienda</h2>
+            <p>
+                Este ejercicio te guía para crear un sistema simple de inventario para una tienda. Utilizarás un <code>std::vector</code> para almacenar los nombres de los productos y sus precios, 
+                bucles para iterar sobre los productos, y funciones para agregar, eliminar y mostrar los productos en el inventario.
+            </p>
+            <h3>Documentación Paso a Paso:</h3>
+            <ol>
+                <li><strong>Definir las Estructuras de Datos:</strong> Define dos vectores (<code>std::vector</code>) para almacenar los nombres y precios de los productos.</li>
+                <li><strong>Función para Agregar un Producto:</strong> Crea una función <code>void agregarProducto(std::vector&lt;std::string&gt; &nombres, std::vector&lt;float&gt; &precios)</code> que toma los vectores por referencia y añade un nuevo producto.</li>
+                <li><strong>Función para Eliminar un Producto:</strong> Crea una función <code>void eliminarProducto(std::vector&lt;std::string&gt; &nombres, std::vector&lt;float&gt; &precios, int index)</code> que elimina un producto en una posición dada.</li>
+                <li><strong>Función para Mostrar Inventario:</strong> Crea una función <code>void mostrarInventario(const std::vector&lt;std::string&gt; &nombres, const std::vector&lt;float&gt; &precios)</code> que muestra todos los productos y sus precios.</li>
+                <li><strong>Bucle para el Menú Principal:</strong> En el <code>main()</code>, utiliza un bucle <code>while</code> para mostrar un menú que permita al usuario elegir entre agregar, eliminar o mostrar productos, o salir del programa.</li>
+                <li><strong>Implementar las Funciones:</strong> Asegúrate de que cada opción del menú llame a la función correspondiente y maneje los errores, como intentar eliminar un producto de un índice no válido.</li>
+            </ol>
+            <textarea id="ejercicio2-codigo" rows="10" placeholder="Escribe tu código aquí..."></textarea>
+        </section>
+
+        <!-- Botón único para guardar todos los archivos -->
+        <button onclick="guardarTodosLosArchivos()">Guardar Todos</button>
+
+        <section id="volver-al-indice">
+            <a href="index.html">Volver al Índice del Curso</a>
+        </section>
+    </main>
+    <script>
+        function guardarTodosLosArchivos() {
+            // Obtener todos los elementos textarea
+            const textareas = document.querySelectorAll('textarea');
+            const fecha = new Date().toISOString().slice(0, 10); // Formato YYYY-MM-DD
+
+            textareas.forEach((textarea, index) => {
+                const contenido = textarea.value;
+                if (contenido.trim() !== '') { // Solo guardar si hay contenido
+                    const numEjercicio = index + 1; // Numero del ejercicio
+                    const nombreArchivo = `${fecha}-ejercicio-${numEjercicio}.cpp`;
+
+                    const blob = new Blob([contenido], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+
+                    const enlace = document.createElement('a');
+                    enlace.href = url;
+                    enlace.download = nombreArchivo;
+
+                    document.body.appendChild(enlace);
+                    enlace.click();
+                    document.body.removeChild(enlace);
+                    URL.revokeObjectURL(url);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
