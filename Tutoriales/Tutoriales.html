@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        #volver-al-indice {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #volver-al-indice a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #volver-al-indice a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutoriales de C++</h1>
+    </header>
+    <main>
+        <section id="operadores">
+            <h2>Operadores</h2>
+            <p>Los operadores en C++ permiten realizar operaciones matemáticas, lógicas y de manipulación de datos. Se dividen en varias categorías:</p>
+            <ul>
+                <li><strong>Operadores aritméticos:</strong> Se usan para realizar operaciones matemáticas básicas.</li>
+                <ul>
+                    <li><code>+</code>: Suma</li>
+                    <li><code>-</code>: Resta</li>
+                    <li><code>*</code>: Multiplicación</li>
+                    <li><code>/</code>: División</li>
+                    <li><code>%</code>: Módulo (resto de la división)</li>
+                </ul>
+                <pre><code>int a = 5;
+int b = 2;
+int suma = a + b; // Resultado: 7
+int resta = a - b; // Resultado: 3
+int modulo = a % b; // Resultado: 1</code></pre>
+
+                <li><strong>Operadores de comparación:</strong> Comparan dos valores y devuelven un valor booleano (verdadero o falso).</li>
+                <ul>
+                    <li><code>==</code>: Igual a</li>
+                    <li><code>!=</code>: Diferente de</li>
+                    <li><code>&gt;</code>: Mayor que</li>
+                    <li><code>&lt;</code>: Menor que</li>
+                    <li><code>&gt;=</code>: Mayor o igual que</li>
+                    <li><code>&lt;=</code>: Menor o igual que</li>
+                </ul>
+                <pre><code>int x = 10;
+int y = 20;
+bool esIgual = (x == y); // Resultado: false
+bool esMayor = (x > y);  // Resultado: false</code></pre>
+
+                <li><strong>Operadores lógicos:</strong> Se usan para combinar expresiones booleanas.</li>
+                <ul>
+                    <li><code>&&</code>: AND lógico (ambos deben ser verdaderos)</li>
+                    <li><code>||</code>: OR lógico (uno o ambos son verdaderos)</li>
+                    <li><code>!</code>: NOT lógico (invierte el valor)</li>
+                </ul>
+                <pre><code>bool a = true;
+bool b = false;
+bool resultado = (a && b); // Resultado: false</code></pre>
+            </ul>
+        </section>
+        <section>
+            <h2>Video Explicativo: Operadores en C++</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/TAqzM5rz6k0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+        </section>
+
+        <section id="tipos-de-datos">
+            <h2>Tipos de Datos</h2>
+            <p>En C++, los tipos de datos determinan el tipo y tamaño de los valores que pueden almacenarse en una variable. Algunos de los tipos de datos más comunes son:</p>
+            <ul>
+                <li><strong>Tipos enteros:</strong> Almacenan números enteros sin parte decimal.</li>
+                <ul>
+                    <li><code>int</code>: Número entero de 4 bytes.</li>
+                    <li><code>short</code>: Entero más pequeño (2 bytes).</li>
+                    <li><code>long</code>: Entero más grande (4 u 8 bytes dependiendo del sistema).</li>
+                </ul>
+                <pre><code>int numero = 100;
+short valorPequeño = 10;
+long valorGrande = 1000000;</code></pre>
+
+                <li><strong>Tipos flotantes:</strong> Almacenan números con parte decimal.</li>
+                <ul>
+                    <li><code>float</code>: Número de coma flotante de precisión simple (4 bytes).</li>
+                    <li><code>double</code>: Número de coma flotante de doble precisión (8 bytes).</li>
+                </ul>
+                <pre><code>float pi = 3.14;
+double e = 2.718281828;</code></pre>
+
+                <li><strong>Tipo booleano:</strong> Almacena valores lógicos (verdadero o falso).</li>
+                <pre><code>bool esVerdadero = true;</code></pre>
+
+                <li><strong>Tipo carácter:</strong> Almacena un solo carácter.</li>
+                <pre><code>char letra = 'A';</code></pre>
+            </ul>
+        </section>
+        <section>
+            <h2>Video Explicativo: Tipos de datos en C++</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/2hr4lIuR3Ps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+        </section>
+        <section id="condicionales">
+            <h2>Condicionales</h2>
+            <p>Las estructuras condicionales permiten ejecutar diferentes bloques de código en función de si se cumplen ciertas condiciones. Los condicionales en C++ incluyen:</p>
+            <ul>
+                <li><strong>if</strong>: Ejecuta un bloque de código si la condición es verdadera.</li>
+                <li><strong>else</strong>: Se ejecuta si la condición en el <code>if</code> no es verdadera.</li>
+                <li><strong>else if</strong>: Evalúa una nueva condición si la primera es falsa.</li>
+            </ul>
+            <pre><code>int numero = 5;
+if (numero > 10) {
+    std::cout &lt;&lt; "Mayor que 10" &lt;&lt; std::endl;
+} else if (numero == 10) {
+    std::cout &lt;&lt; "Igual a 10" &lt;&lt; std::endl;
+} else {
+    std::cout &lt;&lt; "Menor que 10" &lt;&lt; std::endl;
+}</code></pre>
+        </section>
+
+        <section id="bucles">
+            <h2>Bucles</h2>
+            <p>Los bucles permiten ejecutar un bloque de código varias veces de forma repetitiva. Los principales tipos de bucles en C++ son:</p>
+            <ul>
+                <li><strong>for</strong>: Se utiliza cuando se conoce de antemano cuántas veces se ejecutará el bucle.</li>
+                <li><strong>while</strong>: Se utiliza cuando la condición se evalúa antes de cada iteración.</li>
+                <li><strong>do-while</strong>: Se ejecuta al menos una vez, ya que la condición se evalúa después de la primera iteración.</li>
+            </ul>
+            <pre><code>// Ejemplo de bucle for
+for (int i = 0; i &lt; 5; i++) {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; i &lt;&lt; std::endl;
+}
+
+// Ejemplo de bucle while
+int j = 0;
+while (j &lt; 5) {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; j &lt;&lt; std::endl;
+    j++;
+}
+
+// Ejemplo de bucle do-while
+int k = 0;
+do {
+    std::cout &lt;&lt; "Iteración " &lt;&lt; k &lt;&lt; std::endl;
+    k++;
+} while (k &lt; 5);</code></pre>
+        </section>
+
+        <section id="funciones">
+            <h2>Funciones</h2>
+            <p>Las funciones en C++ son bloques de código reutilizables que realizan una tarea específica. Se definen con un tipo de retorno, un nombre y opcionalmente parámetros.</p>
+            <pre><code>int sumar(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int resultado = sumar(5, 3);
+    std::cout &lt;&lt; "La suma es: " &lt;&lt; resultado &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            <p>En este ejemplo, la función <code>sumar</code> recibe dos parámetros <code>a</code> y <code>b</code>, y devuelve la suma de ambos. Luego, se llama a la función desde <code>main</code> para mostrar el resultado.</p>
+        </section>
+         
+        <section>
+            <h2>Video Explicativo: Condicionales en C++</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/RaWfeVgkWbE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+        </section>
+        <section id="comentarios">
+            <h2>Deja tus Comentarios</h2>
+            <p>Nos encantaría escuchar tu opinión. Por favor, deja tus comentarios a continuación y se enviarán por correo electrónico.</p>
+        
+            <form action="mailto:karodirguezt27@gmail.com" method="post" enctype="text/plain">
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu comentario aquí..." style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;"></textarea><br>
+        
+                <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Enviar Comentarios</button>
+            </form>
+        </section>
+        <div id="volver-al-indice">
+            <a href="..\index.html">Volver al índice</a>
+        </div>
+    </main>   
+</body>
+</html>
